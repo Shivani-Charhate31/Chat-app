@@ -6,7 +6,10 @@ import ProfilePage from "./pages/ProfilePage";
 
 function App() {
   return (
-    <div>
+    <div
+      className="bg-[url('./src/assets/bgImage.jpg')] 
+    bg-contain"
+    >
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />

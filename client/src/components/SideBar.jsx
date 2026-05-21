@@ -1,5 +1,5 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import { assets, userDummyData } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
 
 const SideBar = ({ selectedUser, setSelectedUser }) => {
@@ -39,7 +39,7 @@ const SideBar = ({ selectedUser, setSelectedUser }) => {
           className="bg-[#282142] rounded-full flex items-center gap-2 
           py-3 px-4 mt-5"
         >
-          <img src={assets.search_Icon} alt="search" className="w-4" />
+          <img src={assets.searchIcon} alt="search" className="w-4" />
           <input
             type="text"
             className="bg-transparent border-none outline-none
@@ -47,9 +47,38 @@ const SideBar = ({ selectedUser, setSelectedUser }) => {
             placeholder="Search User .."
           />
         </div>
-        <div className="">
-          <p>userList</p>
-        </div>
+      </div>
+      <div className="flex flex-col">
+        {userDummyData.map((user, index) => (
+          <div
+            onClick={() => setSelectedUser(user)}
+            className={`relative flex items-center gap-2 p-2 pl-4
+          rounded cursor-pointer max-sm:text-sm ${selectedUser?._id === user._id && "bg-[#282142]/50"}`}
+            key={index}
+          >
+            <img
+              src={user.profilePic || assets.avatar_icon}
+              alt="user profile"
+              className="w-8.75 h-8.75  aspect-square rounded-full"
+            />
+            <div className="flex flex-col leading-5">
+              <p>{user.fullName}</p>
+              {index < 3 ? (
+                <span className="text-green-400 text-xs">Online</span>
+              ) : (
+                <span className="text-neutral-400 text-xs">Offline</span>
+              )}
+            </div>
+            {index > 2 && (
+              <p
+                className="absolute top-4 right-4 text-xs h-5 w-5
+                flex justify-center items-center rounded-full bg-violet-500/50 "
+              >
+                {index}
+              </p>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );

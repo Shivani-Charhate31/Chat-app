@@ -1,5 +1,4 @@
 
-
 import bgImage from './bgImage.jpg'
 import code from './code.png'
 import logo_icon from './logo_icon.png'
@@ -11,16 +10,19 @@ import pic2 from './pic2.png'
 import pic3 from './pic3.png'
 import pic4 from './pic4.png'
 import searchIcon from './searchIcon.svg'
-import send_button from './send_button.png'
+import send from './send.png'
 import profile_girl from './girl.png'
 import profile_panda from './panda.png'
 import profile_hacker from './hacker.png'
 import profile from './profile.png'
 import profile_woman from './woman.png'
 import avatar_icon from './avatar_icon.svg'
+import arrow from './arrow.png'
+import info from './info.png'
+import gallery from './gallery.png'
 
 import profile_man from './man.png'
-export const assets = { bgImage, code, logo_icon, logo, apple, menu_horizontal, profile_woman, pic1, pic2, pic3, pic4, searchIcon, avatar_icon, profile, send_button }
+export const assets = { bgImage, code, logo_icon, logo, apple, menu_horizontal, profile_woman, pic1, pic2, pic3, pic4, searchIcon, avatar_icon, profile, send, arrow, info, profile_panda, profile_girl, gallery }
 export const imagesDummyData = [pic1, pic2, pic3, pic4, pic1, pic2]
 export const userDummyData = [
     {
@@ -67,7 +69,7 @@ export const userDummyData = [
 export const messagesDummyData = [
     {
         "_id": "6749nghkf748492hgvh90",
-        "senderId": "6749nghkf748492",
+        "senderId": "6749nghkf74io92",
         "receiverId": "6749nghkf748492uyu67",
         "text": "format that includes user records and their respective timestamps.",
         "seen": "true",
@@ -75,7 +77,7 @@ export const messagesDummyData = [
     },
     {
         "_id": "6749nghkf748492hgvh70",
-        "senderId": "6749nghkf748452",
+        "senderId": "6749nghkf748492",
         "receiverId": "6749nghkf748492uyu37",
         "text": "format that includes user records and their respective timestamps.",
         "seen": "true",
@@ -83,15 +85,16 @@ export const messagesDummyData = [
     },
     {
         "_id": "6749nghkf748492hgerh90",
-        "senderId": "6749nghkf787492",
+        "senderId": "6749nghkf748492",
         "receiverId": "6749nghkf748492uyu09",
         "text": "format that includes user records and their respective timestamps.",
         "seen": "true",
+        "img": "",
         "createdAt": "2026-05-11T08:30:15Z",
     },
     {
         "_id": "6749nghkf709492hgvh90",
-        "senderId": "6749nghkf74io92",
+        "senderId": "6749nghkf748492",
         "receiverId": "6749nghkf748490uyu67",
         "text": "format that includes user records and their respective timestamps.",
         "seen": "true",
@@ -99,9 +102,9 @@ export const messagesDummyData = [
     },
     {
         "_id": "6749nghkf748492hgvh60",
-        "senderId": "6749nghkf74849289",
+        "senderId": "6749nghkf748492",
         "receiverId": "6749nghkf748492uyu609",
-        "text": "Here is a clean, formatted sample of dummy data in JSON format that includes user records and their respective timestamps.",
+        "text": " that includes user records and their respective timestamps.",
         "seen": "true",
         "createdAt": "2026-05-07T08:30:15Z",
     },
